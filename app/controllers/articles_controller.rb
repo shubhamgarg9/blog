@@ -1,5 +1,4 @@
 class ArticlesController < ApplicationController
-
 	http_basic_authenticate_with name: "shubham", password: "shubham", except: [:index, :show]
 
 	def new
@@ -47,3 +46,9 @@ class ArticlesController < ApplicationController
 			params.require(:article).permit(:title, :text)
 		end
 end
+
+
+
+
+
+# just checking SSH key
